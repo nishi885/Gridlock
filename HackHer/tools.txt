@@ -1,0 +1,159 @@
+Tools Used:
+
+1. Programming Language
+
+Python
+
+Python was the primary language used for the entire project due to its simplicity and rich ecosystem for data science and machine learning.
+
+It was used for:
+Data preprocessing and cleaning
+Feature engineering
+Model training and evaluation
+Ensemble creation
+Visualization and analysis
+
+Python was preferred because it provides strong support for ML libraries and allows rapid experimentation.
+
+2. Data Handling & Numerical Computation
+
+pandas
+
+Used for structured data manipulation.
+
+Key usage:
+
+Loading dataset (CSV/Excel formats)
+Handling missing values
+Feature creation and transformation
+Grouping and aggregation (e.g., demand by geohash, hour)
+Encoding categorical variables
+
+numpy
+
+Used for numerical operations.
+
+Key usage:
+
+Mathematical transformations
+Array-based computations
+Feature scaling support
+Efficient handling of large datasets
+
+3. Data Visualization Tools
+
+matplotlib
+
+Used for basic plotting and trend visualization.
+
+Key usage:
+
+Line plots for demand trends
+Bar charts for categorical comparisons
+Time-based traffic visualization
+
+seaborn
+
+Used for statistical visualization and better insights.
+
+Key usage:
+
+Heatmaps for correlation analysis
+Distribution plots for demand skewness
+Boxplots for outlier detection
+Feature relationship visualization (e.g., demand vs geohash)
+
+4.  Machine Learning Libraries
+
+scikit-learn
+
+Used as the core ML utility library.
+
+Key usage:
+
+Train-test split
+Cross-validation (K-Fold CV)
+Performance metrics (R² score, RMSE)
+Preprocessing (encoding, scaling)
+Baseline models like Linear Regression, Random Forest
+
+It helped in building a structured ML pipeline.
+
+ XGBoost
+
+A high-performance boosting algorithm used for final modeling.
+
+Key usage:
+
+Capturing complex non-linear relationships
+Handling feature interactions effectively
+Providing high accuracy in structured data
+
+Strength:
+
+Very strong performance on tabular datasets
+
+LightGBM (Light Gradient Boosting Machine)
+
+Key usage:
+
+Fast training on large datasets
+Efficient handling of high-dimensional features
+Better performance with tuned parameters
+
+Strength:
+
+Speed + scalability advantage
+
+CatBoost
+
+Used for handling categorical features efficiently.
+
+Key usage:
+
+Direct handling of categorical variables (like geohash, road type)
+Reducing preprocessing complexity
+Improving generalization in some cases
+
+5. Model Evaluation Metrics
+
+R² Score
+Measures how well predictions explain variance in target variable
+Used as the main evaluation metric for leaderboard comparison
+
+RMSE (Root Mean Squared Error)
+Used during experimentation
+Helps measure prediction error magnitude
+
+Cross-Validation (K-Fold)
+Ensures model stability
+Reduces risk of overfitting
+Provides reliable performance estimate
+
+6. Development Environment
+
+Jupyter Notebook / Google Colab / VS Code
+
+Used for:
+
+Step-by-step experimentation
+Visualization and debugging
+Model training and comparison
+Code organization
+Modular script development
+Debugging large pipelines
+
+
+Advantages:
+
+Interactive development
+Easy visualization of outputs
+
+
+7. ML Workflow Techniques Used
+
+Feature Engineering
+Cyclic encoding (hour → sin/cos transformation)
+Geohash encoding for spatial features
+Traffic intensity features (vehicle density, rush hour flag)
+Hyperparameter Tuning
